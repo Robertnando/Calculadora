@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="Style.css">
+    <title>Chirumiru</title>
+</head>
+<body>
+    <main class="wrapper">
+        <div class="Head">
+            <h1>
+                <p>hello world</p>
+            </h1>
+        </div>
+        <div class="Calculator">
+            <div class="Input">
+                <form id="ElFormulario" name="" method="post">
+                    <label>Number 1</label>
+                    <input type="number" name="" id="Value1" autofocus placeholder="Insert Number">
+                    <br>
+                    <br>
+                    <label>Number 2</label>
+                    <input type="number" name="" id="Value2" autofocus placeholder="Insert Number">
+                    <button onclick="Clean();">Clear</button>
+                    <br>
+                    <br>
+                    <button type="button" onclick="sumar();">sumar</button> 
+                    <button type="button" onclick="restar();">restar</button> 
+                    <button type="button" onclick="multiplicacion();">multiplicar</button> 
+                    <button type="button" onclick="division();">dividir</button> 
+                    <p>El resultado es: <span id="ElResultado"></span></p>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+    </main>
+    <div class="Calculator2">
+        <div class="Screen">0</div>
+        <button id="clear" class="btn">C</button>
+        <button id="Erase" class="btn">←</button>
+        <button class="btn">/</button>
+        <button class="btn">*</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">-</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">+</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button id="Equal" class="btn">=</button>
+        <button id="Cero" class="btn">0</button>
+        <button class="btn">.</button>
+     </div>
+    <script src="Javing.js"></script>
+</body>
+</html>
