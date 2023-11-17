@@ -7,6 +7,24 @@ body {
     border-color: chartreuse;
 }
 
+#Value2{
+    border-color: chartreuse;
+}
+.bottonclick{
+    color: white;
+    width: 40px;
+    font-size: 8px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: red;
+    height: 40px;
+    box-shadow: 5px -5px 5px #7e122b;
+    border-radius: 20%;
+}
+#MR_BEAST{
+
+}
+
 .Calculator{
     display: flex;
     justify-content: center;
