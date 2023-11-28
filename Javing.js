@@ -83,13 +83,35 @@ const Button = document.querySelectorAll(".btn");
 
 Button.forEach(Botton => {
     Botton.addEventListener("click", () => {
-        const Smash = Botton.textContent;
+        const botonApretado = Botton.textContent;
 
         if (Botton.id === "clear") {
             Screen.textContent = "0";
+            return;
         }
-        Screen.textContent = Smash;
 
-        console.log(Botton.textContent);
+        if (Botton.id === "Erase") {
+             if (Screen.textContent.length === 1 || Screen.textContent === "Error!") {
+                Screen.textContent = "0";
+             } else {
+                Screen.textContent = Screen.textContent.slice(0, -1);
+             }
+             return;
+        }
+
+        if (Botton.id === "Equal") {
+            try {
+                Screen.textContent = eval(Screen.textContent);
+            } catch {
+                Screen.textContent = "Error!";
+            }
+            return;
+        }
+
+        if (Screen.textContent === "0" || Screen.textContent === "Error!") {
+            Screen.textContent = botonApretado;
+        } else {
+            Screen.textContent += botonApretado;
+        }
     })
 })
